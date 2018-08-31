@@ -1,0 +1,185 @@
+
+/*Background color for everything*/
+/*
+* {
+    background-color: black;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+*/
+
+/*STYLING THE MENU HORIZONTAL*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #262626;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    padding-left: 8vw;
+    padding-right: 8vw;
+
+    
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+/*LOGO STYLING*/
+
+#logo {
+    float: left;
+}
+
+
+#mainpic {
+    max-width: 100%;
+}
+
+.welcome {
+    text-align: center;
+    color: black;
+}
+
+
+/*Collapsible*/
+
+.collapsible {
+    color: darkblue;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    
+}
+
+button {
+    background-color: white;
+}
+
+.active, .collapsible:hover {
+    background-color: #d1d1e0;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+
+/*Media Queries*/
+
+/*DESKTOP*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+    grid-template-areas: 
+        
+    "header"
+    "mainpic" 
+    "welcome"
+    "menu_options"
+    "dish_descriptions"
+     "footer";
+       
+}
+
+.header {
+    grid-area: header;
+    
+}
+
+.mainpic {
+    grid-area: mainpic;
+   
+}
+
+.welcome {
+    grid-area: welcome;
+  
+}
+.menu_options {
+    grid-area: menu_options;
+  
+}
+.dish_descriptions {
+    grid-area: dish_descriptions;
+    
+}
+
+.footer {
+    grid-area: footer;
+
+}
+
+
+.menu_options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    
+    grid-template-areas: 
+        
+    "soups maindish drinks"
+    "salads desserts wines";
+}
+
+.dish_descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   
+}
+    
+/*STYLING*/
+
+.soups, .maindish, .drinks, .salads, .desserts, .wines {
+    
+  background-color:  #262626;
+    text-align: center;
+    padding: 10vh;  
+}
+
+.soups:hover,.maindish:hover, .drinks:hover, .salads:hover, .desserts:hover, .wines:hover {
+    opacity: 0.8;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+#vege {
+    width: 24px;
+}
+
+.dish_descriptions {
+    color: black;
+    margin: 5% 15% 0% 15%
+    
+}
+
+
+
